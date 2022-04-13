@@ -13,9 +13,11 @@
   <body class="container">
     <h1>Resultado</h1>
     <?php
-        for($1=1; $1 <= 10; $1++){
+
+        for ($i=1; $i <= 10; $i++){
             $vetor[$i] = $_POST["num$i"];
         }
+
         $posicao = 0;
         $maior = 0;
     ?>

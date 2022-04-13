@@ -13,18 +13,19 @@
   <body class="container">
     <h1>Exercicio 1</h1>
     <div class="row">
-        <div class="col">
-            <form action="resultado.php" method="post">
-                <?php
-                    for ($1=1; $1 <= 10; $1++){
-                ?>
-                    
-                <label for="valor<? $1 ?>" class="label-control"> Informe o valor <?= $1 ?></label>
-                <input type="number" name="valor<?= $1?>" class="form-control">
-                <?php 
-                }
-                ?>
-        </div>  
+    <div class="col mb-3">
+        <form action="resposta.php" method="post">
+        <?php
+            for ($i=1; $i <= 10; $i++){
+        ?>
+        <label for="num<?= $i ?>" class="form-label">Digite um valor <?= $i ?></label>
+                  
+        <input type="number" class="form-control" id="num<?= $i ?>" name="num<?= $i ?>">
+        <?php
+            }
+        ?>
+
+      </div>
                 
         <div class="row">
             <div class="col">
