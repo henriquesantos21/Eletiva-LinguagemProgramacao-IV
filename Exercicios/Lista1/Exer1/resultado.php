@@ -2,15 +2,16 @@
 
     $valor_produto = $_POST['valor_produto'];
     $valor_pago = $_POST['valor_pago'];
-
+    $valorfalta = $valor_pago - $valor_produto;
     if($valor_produto == $valor_pago)
         echo "Não á troco";
     elseif($valor_produto > $valor_pago)
-        echo "Valor pago insuficiente";
+        echo "Valor pago insuficiente<br> Valor faltante: $valorfalta R$"; 
+        
     else
         echo "Valor do troco: ".($valor_pago - $valor_produto);
 
-    
+    /*
     $vetor = array(0,1,2,3);
     $vetor[0] = 0;
     $vetor[1] = 1;
@@ -32,4 +33,4 @@
 
     echo $vetor['post1'];
     echo $vetor[4];
-
+*/
