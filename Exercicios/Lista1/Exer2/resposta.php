@@ -8,10 +8,17 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Resultado</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <h2>Resultado</h2>
+    <?php
+      $valor_quilo = $_POST["valor_quilo"];
+      $qtde_quilo = $_POST["qtde_quilo"];
+
+      $valorF = $qtde_quilo * $valor_quilo;
+      echo "Valor final: $valorF R$"
+    ?>
 
     <!-- Optional JavaScript; choose one of the two! -->
 

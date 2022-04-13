@@ -8,35 +8,16 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>Exercicio 2</title>
+    <title></title>
   </head>
-  <body class=container>
-    <h2>Exercicio 2</h2>
-    <form action="resposta.php"  method="post">
-        <div class="row mt-5">
-            <div class="mb-3">
-              <label for="valor_quilo" class="label-control">
-                  Insira o valor do quilo:
-              </label>
-              <input type="number" name="valor_quilo" 
-                  id="valor_quilo" class="from-control"/>
-            </div>
-            <div class="mb-3">
-              <label for="qtde_kilo" class="label-control">
-                Insira a quatidade:
-              </label>
-              <input type="number" name="qtde_quilo"
-                  id="qtde_quilo" class="from-control"/>
-            </div>
-        </div>
-        <div class="row mt-5">
-          <div class="col">
-            <button type="submit" class="btn btn-primary">
-              Calcular
-            </button>
-          </div>
-        </div>
-    </form>
+  <body>
+    <?php
+    $valor = $_POST["valor"];
+    if ($valor > 10)
+      echo "o valor é maior que 10";
+    else 
+      echo "O valor é menor que 10";
+    ?>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
