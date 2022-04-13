@@ -8,32 +8,10 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>Resultado 1</title>
+    <title>Resposta 2</title>
   </head>
-  <body class="container">
-    <h1>Resultado</h1>
-    <?php
-        for($1=1; $1 <= 10; $1++){
-            $vetor[$i] = $_POST["num$i"];
-        }
-        $posicao = 0;
-        $maior = 0;
-    ?>
-
-    <div class="row rounded-3 p-3 border-dark shadow mb-5">
-        <div class="col">
-            <?php
-                foreach($vetor as $chave => $num){
-                    if($num > $maior){
-                        $maior = $num;
-                        $posicao = $chave;
-                    }
-                }
-                echo"<h4> maior valor é $maior e está na posição $posicao</h4>";
-            ?>
-        </div>
-    </div>
-
+  <body>
+    
 
     <!-- Optional JavaScript; choose one of the two! -->
 
