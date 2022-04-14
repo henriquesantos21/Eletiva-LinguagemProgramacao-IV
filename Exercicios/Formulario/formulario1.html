@@ -14,47 +14,47 @@
     <h2 class="mt-5 display-6">Formulario</h2><br>
     <div style="border-top:1px solid #ced4da;border-left:1px solid #ced4da; padding:15px 25px;"></div> 
       <form>
-          <div class="row mt-5">
-            <div class="col-4">
-              <label for="firstname" class="form-control">First Name</label>
-              <input type="text" id="firstname" name="firstname" placeholder="nome" class="form-control">
-            </div>
-            <div class="col-4">
-                <label for="lastname" class="form-control">Last Name</label>
-                <input type="text" id="lastname" name="firstname" placeholder="sobrenome" class="form-control">
-                <div class="invalid-feedback">
-                  Please choose a username
-                </div>
-            </div> 
-            <div class="col-4">
-              <label for="username" class="form-control">Username</label>
+        <div class="row mt-5">
+          <div class="col">
+              <label for="firstname" class="label-control">First Name</label>
+              <input type="text" id="firstname" name="firstname" placeholder="Mark" class="form-control">
+          </div>
+          <div class="col">
+              <label for="lastname" class="label-control">Last Name</label>
+              <input type="text" id="lastname" name="lastname" placeholder="Otto" class="form-control">
+          </div>
+          <div class="col">
+              <label for="username" class="label-control">Username</label>
               <div class="input-group">
-                <span class="input-group-text" id="inputGroupPrepend">@</span>
-                <input type="text" id="username" name="useranme" placeholder="Username" class="form-control">
+              <span class="input-group-text">@</span>
+              <input type="text" id="username" name="username" placeholder="Username" class="form-control ">
               </div>
-            </div>
           </div>
-          <div class="row md-3">
-            <div class="col-6">
-              <label for="city" class="form-control">City</label>
-              <input type="text" id="city" name="city" placeholder="City">
-            </div>
-            <div class="col-3">
-              <label for="state" class="form-control">State</label>
-              <input type="text" id="state" name="state" placeholder="State">
-            </div>
-            <div class="col-3">
-              <label for="cep" class="form-control">Zip</label>
-              <input type="text" id="cep" name="cep" placeholder="Zip">
-            </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Agree to terms and conditions</label>
-            </div>
+      </div>
+      <div class="row mt-3">
+          <div class="col-6">
+              <label for="city" class="label-control">City</label>
+              <input type="text" id="city" name="city" placeholder="City" class="form-control">
           </div>
-          <div class="row-2 mt-3">
-            <button type="submit" class="btn btn-primary">Submit form</button>
+          <div class="col-3">
+              <label for="state" class="label-control">State</label>
+              <input type="text" id="state" name="state" placeholder="State" class="form-control">
           </div>
+          <div class="col-3">
+              <label for="zip" class="label-control">Zip</label>
+              <input type="text" id="zip" name="zip" placeholder="Zip" class="form-control">
+          </div>
+      </div>
+      <div class="row mt-3">
+          <div class="form-check">
+              <input type="checkbox" id="checkbox" class="form-check-input">
+              <label for="checkbox" class="form-check-label">Agree to terms and conditions</label>
+          </div>
+      </div>
+      <div class="row-2 mt-3">
+          <button type="submit" class="btn btn-primary">Submit form</button>
+      </div>
+  
       </form>
     </div> 
 
