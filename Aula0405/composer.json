@@ -1,0 +1,16 @@
+{
+    "name": "aluno/aula0405",
+    "description": ":",
+    "autoload": {
+        "psr-4": {
+            "Aluno\\Aula0405\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "henriquesantos21",
+            "email": "100103787+henriquesantos21@users.noreply.github.com"
+        }
+    ],
+    "require": {}
+}
