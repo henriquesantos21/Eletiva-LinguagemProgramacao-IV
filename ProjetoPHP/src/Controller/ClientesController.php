@@ -18,10 +18,13 @@ class ClientesController{
         $cliente->setNome($_POST['nome']);
         $dao = new ClientesDAO();
         if ($dao->inserir($cliente)){
-            return "Inserido com sucesso!";
+            $respota = true;
+            require_once "../src/View/listar_clientes";
         } else {
-            return "Erro ao inserir";
+            $resposta = false;
         }
+        require_once "../src/View/listar_clientes.php";
     }
 
 }
+        
