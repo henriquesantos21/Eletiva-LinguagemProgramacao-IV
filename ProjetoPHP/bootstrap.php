@@ -22,9 +22,11 @@ $router->get('/exemplo',
 $router->post('/exemplo-resultado',
         'Aluno\ProjetoPhp\Controller\ExercicioController::exibirResultado');
 
-$router->get('\cliente\novo', 'Aluno\ProjetoPHP\Controller\ClientesController::abrirFormulario');
+$router->get('/cliente/novo',
+'Aluno\ProjetoPhp\Controller\ClientesController::abrirFormularioInserir');
 
-$router->post('\cliente\inserir', 'Aluno\ProjetoPHP\Controller\ClientesController::inserirCliente');
+$router->post('/cliente/inserir',
+'Aluno\ProjetoPhp\Controller\ClientesController::inserirCliente');
 
 //ADICIONAR AS ROTAS VÁLIDAS ACIMA
 

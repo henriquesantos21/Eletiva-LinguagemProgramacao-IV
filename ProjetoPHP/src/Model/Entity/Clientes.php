@@ -1,8 +1,9 @@
-<?PHP
+<?php
 
 namespace Aluno\ProjetoPhp\Model\Entity;
 
-class Cliente{
+class Clientes{
+
     private $id;
     private $nome;
     private $email;
@@ -19,6 +20,7 @@ class Cliente{
     public function getNome(){
         return $this->nome;
     }
+
     public function setNome($nome){
         $this->nome = $nome;
     }
@@ -29,12 +31,14 @@ class Cliente{
 
     public function setEmail($email){
         $this->email = $email;
-    } 
-    
-    public function getIDade(){
+    }
+
+    public function getIdade(){
         return $this->idade;
     }
+
     public function setIdade($idade){
         $this->idade = $idade;
     }
+
 }

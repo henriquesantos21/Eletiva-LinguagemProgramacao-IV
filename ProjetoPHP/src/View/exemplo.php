@@ -8,45 +8,33 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>Inserir Cliente</title>
+    <title>Hello, world!</title>
   </head>
-  <body>
-    <h1>Inserir Cliente</h1>
+  <body class="container">
+    <h1>Exemplo</h1>
 
-    <form action="/cliente/inserir" method="post">
+    <form method="POST" action="/exemplo-resultado">
         <div class="row">
-            <div class="col-5">
-                <label for="nome" class="label-control">
-                    Informe o nome:
-                </label>
-                <input type="text" class="form-control"
-                        name="nome" id="nome"/>
+            <div class="col">
+                <label class="label-control">Valor 1</label>
+                <input class="form-control" name="valor1" type="text"/>
             </div>
-            <div class="col-5">
-                <label for="email" class="label-control">
-                    Informe o email:
-                </label>
-                <input type="text" class="form-control"
-                        name="email" id="email"/>
-            </div>
-            <div class="col-2">
-                <label for="idade" class="label-control">
-                    Informe a idade:
-                </label>
-                <input type="number" class="form-control"
-                        name="idade" id="idade"/>
+            <div class="col">
+                <label class="label-control">Valor 2</label>
+                <input class="form-control" name="valor2" type="text"/>
             </div>
         </div>
         <div class="row">
-            <div class="col mt-5">
-                <button type="submit" 
-                        class="btn btn-primary">
-                    Enviar
-                    </button>
+            <div class="col">
+                <button type="submit" class="btn btn-primary">Ok</button>
             </div>
         </div>
-
     </form>
+    
+    <?php
+        if (isset($soma))
+            echo "O valor da soma é $soma";
+    ?>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
