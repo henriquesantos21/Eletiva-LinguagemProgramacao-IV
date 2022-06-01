@@ -28,8 +28,17 @@ $router->get('/cliente/novo',
 $router->post('/cliente/inserir',
 'Aluno\ProjetoPhp\Controller\ClientesController::inserirCliente');
 
-$router->get('/cliente',
-'Aluno\ProjetoPhp\Controller\ClientesController::abrirFormularioClientes');
+$router->get('/clientes',
+'Aluno\ProjetoPhp\Controller\ClientesController::abrirListaClientes');
+
+$router->get('/cliente/alterar/{id}',
+'Aluno\ProjetoPhp\Controller\ClientesController::abrirFormularioAlterar');
+
+$router->post('/cliente/editar/{id}',
+'Aluno\ProjetoPhp\Controller\ClientesController::editarCliente');
+
+$router->get('/cliente/excluir/{id}',
+'Aluno\ProjetoPhp\Controller\ClientesController::excluirCliente');
 
 //ADICIONAR AS ROTAS VÁLIDAS ACIMA
 

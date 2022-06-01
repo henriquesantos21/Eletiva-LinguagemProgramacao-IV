@@ -11,53 +11,51 @@
     <title>Clientes</title>
   </head>
   <body>
+    <?php require_once "barra_navegacao.php"; ?>
     <div class="container">
         <h1>Clientes</h1>
-        <?php   
+
+        <?php
             if (isset($resposta)){
                 if ($resposta){
-                    echo  '<div class="alert alert-success alert-dismissible fade show" role="alert">
-                    Registro inserido com sucesso!
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                </div>';
-                }else{
+                    echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
+                            Registro inserido com sucesso!
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>';
+                } else {
                     echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
-                    Erro ao insrir um registro!
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                </div>';
+                            Erro ao inserir o registro!
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>';
                 }
             }
-        ?>
+        ?> 
 
         <table class="table table-hover">
             <thead>
                 <tr>
                 <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Email</th>
+                <th scope="col">Ações</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                </tr>
-                <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-                </tr>
-                <tr>
-                <th scope="row">3</th>
-                <td colspan="2">Larry the Bird</td>
-                <td>@twitter</td>
-                </tr>
+                <?php while($linha = $resultado->fetch(PDO::FETCH_ASSOC)){ ?>
+                    <tr>
+                        <th scope="row"><?= $linha['id'] ?></th>
+                        <td><?= $linha['nome'] ?></td>
+                        <td><?= $linha['email'] ?></td>
+                        <td> <a href="/cliente/alterar/<?= $linha['id'] ?>"
+                                class="btn btn-warning">Alterar</a> 
+                             <a href="/cliente/excluir/<?= $linha['id'] ?>"
+                                class="btn btn-danger">Excluir</a>
+                        </td>
+                    </tr>
+                <?php } ?>
             </tbody>
             </table>
+
     </div>
     <!-- Optional JavaScript; choose one of the two! -->
 
