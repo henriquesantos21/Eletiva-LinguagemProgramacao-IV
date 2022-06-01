@@ -47,8 +47,8 @@ class ClientesDAO{
     public function consultar(){
         try{
             $sql = "SELECT * FROM clientes";
-            return Conexao::conectar()->query($sql);
-        } catch(\Exception $e){
+            return Conexao ::conectar()->query($sql); //query significa que vai fazer uma busca
+        }catch(\Exception $e){
             return false;
         }
     }
