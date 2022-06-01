@@ -9,31 +9,31 @@ class Produto{
     private $valor;
 
     public function getCodigo(){
-        return &this->codigo;
+        return $this->codigo;
     }
     public function setCodigo(){
         $this ->codigo;
     }
 
     public function getNome(){
-        return &this->nome;
+        return $this->nome;
     }
     public function setNome(){
         $this ->nome;
     }
 
-    public function getCodigo(){
-        return &this->codigo;
+    public function getDescricao(){
+        return $this->descricao;
     }
-    public function setCodigo(){
-        $this ->codigo;
+    public function setDescricao(){
+        $this ->descricao;
     }
 
-    public function getCodigo(){
-        return &this->codigo;
+    public function getValor(){
+        return $this->valor;
     }
-    public function setCodigo(){
-        $this ->codigo;
+    public function setValor(){
+        $this ->valor;
     }
 }
 
