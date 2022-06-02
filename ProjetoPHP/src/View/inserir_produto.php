@@ -16,20 +16,24 @@
           <form action="produto/inserir" method="POST">
           <div class="row">
               <div class="col-5">
-                    <label for="nome" class="label-control">
-                        Informe o nome:
-                    </label>
-                    <input type="text" class="form-control"
-                            name="nome" id="nome"/>
-                </div>
+                <label for="nome" class="label-control"> Informe o nome: </label>
+                <input type="text" class="form-control" name="nome" id="nome"/>
+              </div>
 
-                <div class="col-5">
-                    <label for="nome" class="label-control">
-                        Informe o nome:
-                    </label>
-                    <input type="text" class="form-control"
-                            name="nome" id="nome"/>
-                </div>
+              <div class="col-5">
+                <label for="valor" class="label-control"> Informe o valor: </label>
+                <input type="number" class="form-control" name="valor" id="valor"/>
+              </div>
+            
+              <div class="mb-3">
+                <label for="descricao" class="form-label">Descrição produto:</label>
+                <textarea class="form-control" id="descricao" rows="3"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col mt-5">
+                <button type="submit" class="btn btn-primary">
+              </div>
             </div>
           </form>
       </div>
