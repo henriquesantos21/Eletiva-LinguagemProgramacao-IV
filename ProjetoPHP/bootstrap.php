@@ -22,23 +22,23 @@ $router->get('/exemplo',
 $router->post('/exemplo-resultado',
         'Aluno\ProjetoPhp\Controller\ExercicioController::exibirResultado');
 
-$router->get('/cliente/novo',
-'Aluno\ProjetoPhp\Controller\ClientesController::abrirFormularioInserir');
+//ROTAS CLIENTES
+$router->get('/cliente/novo', 'Aluno\ProjetoPHP\Controller\ClientesController::abrirFormularioInserir');
+$router->post('/cliente/inserir', 'Aluno\ProjetoPHP\Controller\ClientesController::inserirCliente');
+$router->get('/clientes', 'Aluno\ProjetoPHP\Controller\ClientesController::abrirListaClientes');
+$router->get('/cliente/alterar/{id}', 'Aluno\ProjetoPHP\Controller\ClientesController::abrirFormularioAlterar');
+$router->post('/cliente/editar/{id}', 'Aluno\ProjetoPHP\Controller\ClientesController::editarCliente');
+$router->get('/cliente/excluir/{id}', 'Aluno\ProjetoPHP\Controller\ClientesController::excluirCliente');
+//ROTAS CLIENTES
 
-$router->post('/cliente/inserir',
-'Aluno\ProjetoPhp\Controller\ClientesController::inserirCliente');
-
-$router->get('/clientes',
-'Aluno\ProjetoPhp\Controller\ClientesController::abrirListaClientes');
-
-$router->get('/cliente/alterar/{id}',
-'Aluno\ProjetoPhp\Controller\ClientesController::abrirFormularioAlterar');
-
-$router->post('/cliente/editar/{id}',
-'Aluno\ProjetoPhp\Controller\ClientesController::editarCliente');
-
-$router->get('/cliente/excluir/{id}',
-'Aluno\ProjetoPhp\Controller\ClientesController::excluirCliente');
+//ROTAS PRODUTOS
+$router->get('/produto/novo', 'Aluno\ProjetoPHP\Controller\ProdutosController::abrirFormularioInserir');
+$router->post('/produto/inserir', 'Aluno\ProjetoPHP\Controller\ProdutosController::inserirProduto');
+$router->get('/produtos', 'Aluno\ProjetoPHP\Controller\ProdutosController::abrirListaProdutos');
+$router->get('/produto/alterar/{codigo}', 'Aluno\ProjetoPHP\Controller\ProdutosController::abrirFormularioAlterar');
+$router->post('/produto/editar/{codigo}', 'Aluno\ProjetoPHP\Controller\ProdutosController::editarProduto');
+$router->get('/produto/excluir/{codigo}', 'Aluno\ProjetoPHP\Controller\ProdutosController::excluirProduto');
+//ROTAS PRODUTOS
 
 //ADICIONAR AS ROTAS VÁLIDAS ACIMA
 

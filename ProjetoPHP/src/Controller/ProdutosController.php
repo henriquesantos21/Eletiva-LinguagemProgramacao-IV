@@ -1,8 +1,8 @@
 <?php
-namespace Aluno\ProjetoPHP\Controller;
+namespace ProjetoPHP\Controller;
 
-use Aluno\ProjetoPhp\Model\DAO\ProdutosDAO;
-use Aluno\ProjetoPhp\Model\Entity\Produtos;
+use ProjetoPhp\Model\DAO\ProdutosDAO;
+use ProjetoPhp\Model\Entity\Produtos;
 
 class ProdutosController{
     public static function abrirFormularioInserir(){
