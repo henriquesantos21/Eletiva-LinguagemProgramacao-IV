@@ -2,7 +2,7 @@
 
 namespace Aluno\ProjetPHP\Model\Entity;
 
-class Produto{
+class Produtos{
     private $codigo;
     private $nome;
     private $descricao;
