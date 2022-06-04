@@ -11,6 +11,7 @@
     <title>Lista dos Produtos</title>
   </head>
   <body>
+    <?php require_once "barra_navegacao.php"; ?>
     <div class="container">
         <h1>Lista dos Produtos</h1>
 

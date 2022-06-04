@@ -11,15 +11,32 @@
     <title>Alterar Produto</title>
   </head>
   <body>
+      <?php require_once "barra_navegacao.php"; ?>
       <div class="container">
         <h1>Alterar Produto</h1>
         <form action="/produto/editar/<?= $params[1] ?>" method="post">
           <div class="row">
+          <div class="col-5">
+                <label for="nome" class="label-control"> Informe o nome: </label>
+                <input type="text" class="form-control" name="nome" id="nome"<?= $resultado['nome'] ?>/>
+              </div>
             <div class="col-5">
-              <label for nome ="nome" class = "label-control">Informe o nome:</label>
-              <input type = "text" class = "form-control" name = "nome" id = "nome" value = "<?resultado['nome']?>"/>
+                <label for="valor" class="label-control"> Informe o valor: </label>
+                <input type="number" class="form-control" name="valor" id="valor"<?= $resultado['valor'] ?>/>
+              </div>
+
+              <div class="mb-3">
+                <label for="descricao" class="form-label">Descrição do produto:</label>
+                <textarea class="form-control" id="descricao" rows="3"<?=$resultado['descricao']?>></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col mt-5">
+                <button type="submit" class="btn btn-primary">
+              </div>
             </div>
           </div>
+
         </form>
 
       </div>
