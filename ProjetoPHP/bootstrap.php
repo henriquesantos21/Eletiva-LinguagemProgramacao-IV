@@ -32,12 +32,12 @@ $router->get('/cliente/excluir/{id}', 'Aluno\ProjetoPHP\Controller\ClientesContr
 //ROTAS CLIENTES
 
 //ROTAS PRODUTOS
-$router->get('/produto/novo', 'Aluno\ProjetoPHP\Controller\ProdutosController::abrirFormularioInserir');
-$router->post('/produto/inserir', 'Aluno\ProjetoPHP\Controller\ProdutosController::inserirProduto');
-$router->get('/produtos', 'Aluno\ProjetoPHP\Controller\ProdutosController::abrirListaProdutos');
-$router->get('/produto/alterar/{codigo}', 'Aluno\ProjetoPHP\Controller\ProdutosController::abrirFormularioAlterar');
-$router->post('/produto/editar/{codigo}', 'Aluno\ProjetoPHP\Controller\ProdutosController::editarProduto');
-$router->get('/produto/excluir/{codigo}', 'Aluno\ProjetoPHP\Controller\ProdutosController::excluirProduto');
+$router->get('/produto/novo', '\ProjetoPHP\Controller\ProdutosController::abrirFormularioInserir');
+$router->post('/produto/inserir', '\ProjetoPHP\Controller\ProdutosController::inserirProduto');
+$router->get('/produtos', 'ProjetoPHP\Controller\ProdutosController::abrirListaProdutos');
+$router->get('/produto/alterar/{codigo}', 'ProjetoPHP\Controller\ProdutosController::abrirFormularioAlterar');
+$router->post('/produto/editar/{codigo}', 'ProjetoPHP\Controller\ProdutosController::editarProduto');
+$router->get('/produto/excluir/{codigo}', 'ProjetoPHP\Controller\ProdutosController::excluirProduto');
 //ROTAS PRODUTOS
 
 //ADICIONAR AS ROTAS VÁLIDAS ACIMA

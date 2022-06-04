@@ -1,14 +1,15 @@
 {
     "name": "aluno/projeto-php",
+    "description": "Projeto PHP",
     "autoload": {
         "psr-4": {
-            "Aluno\\ProjetoPhp\\": "src/"
+            "ProjetoP\\": "src/"
         }
     },
     "authors": [
         {
-            "name": "",
-            "email": "vanessa.borges2@fatec.sp.gov.br"
+            "name": "henriquesantos21",
+            "email": "100103787+henriquesantos21@users.noreply.github.com"
         }
     ],
     "require": {}
